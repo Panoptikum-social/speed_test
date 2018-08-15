@@ -12,7 +12,7 @@ defmodule SpeedTest.MixProject do
   end
 
   def application do
-    [ applications: [:httpoison, :quinn],
+    [ applications: [:httpoison, :quinn, :timex],
       extra_applications: [:logger]
     ]
   end
@@ -23,6 +23,7 @@ defmodule SpeedTest.MixProject do
       # {:hackney, "1.12.1"} # http client
       # {:sweet_xml, "~> 0.6"} # XML parse
       {:quinn, "~> 1.1.2"}, # XML parser
+      {:timex, "~> 3.3.0"},
     ]
   end
 end
